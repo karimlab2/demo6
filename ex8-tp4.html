@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><title> TP4_Ex1 </title>
+<script>
+function mafonction(){
+document.getElementById("txt").value="";
+
+}
+</script>
+</head>
+
+<body onkeypress="if (event.keyCode == 13) mafonction()">
+<p class="center">
+<button id="b" type="button">Cliquez-moi</button>
+<input type="text" value="test test" id="txt"> </input> 
+</p>
+<script>
+let btn = document.getElementById("b");
+btn.onclick = function() { this.innerHTML= "Vous m'avez cliqu&eacute"};
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html>
+         <head>
+		 
+		  <meta charset="UTF-8">
+		  <script>
+		function test(x){
+		
+		var boutons = document.getElementsByTagName('button');
+for (var i = 0; i < boutons.length; i++) {
+  boutons[i].onclick = function(x) {
+    alert('bouton clické: ' + event.currentTarget.innerHTML);
+    // => le contenu du bouton cliqué va être affiché dans l'alert
+  };
+}}
+		 </script>
+		
+		 </head>
+           
+	<body onload="test(event)">
+	
+	
+	<button>Mon 1er Bouton</button>
+    <button>Mon 2ème Bouton</button>
+    <button>Mon 3ème Bouton</button>
+	 
+	
+	</body>
+	
+	</html>
+
